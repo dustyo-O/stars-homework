@@ -6,7 +6,7 @@ export default function Stars({ count }) {
 
   return (
     <ul class="card-body-stars u-clearfix">
-      {(new Array(count)).map(() => (<li><Star/></li>))}
+      {(new Array(count)).map((value, index) => (<li key={index}><Star/></li>))}
     </ul>
   );
 }
